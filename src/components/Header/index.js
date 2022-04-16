@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Header = ({ sections }) => {
-	const [currentContent, setContent] = useState('about-me');
-
+const Header = ({ sections, currentContent, setContent }) => {
 	const sectionChange = async event => {
 		setContent(event.target.getAttribute('data-id'));
 	};
@@ -15,14 +13,21 @@ const Header = ({ sections }) => {
 				</a>
 				<ul className="row justify-content-end">
 					{sections.map(section => {
+						let { dataId, name } = section;
 						return (
 							<div
-								key={section.dataId}
-								data-id={`${section.dataId}`}
+								key={dataId}
 								className="nav-item col-auto"
 								onClick={sectionChange}
 							>
-								{section.name}
+								<li
+									data-id={`${dataId}`}
+									className={`nav-link pointer ${
+										currentContent === dataId ? 'text-success' : 'text-light'
+									}`}
+								>
+									{name}
+								</li>
 							</div>
 						);
 					})}
