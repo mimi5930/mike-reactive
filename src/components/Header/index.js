@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Header = () => {
+const Header = ({ sections }) => {
+	const [currentContent, setContent] = useState('about-me');
+
+	const sectionChange = async event => {
+		setContent(event.target.getAttribute('data-id'));
+	};
+
 	return (
 		<nav className="navbar bg-dark text-white">
 			<div className="container-fluid title">
@@ -8,10 +14,18 @@ const Header = () => {
 					Mike Miller
 				</a>
 				<ul className="row justify-content-end">
-					<div className="nav-item col-auto">About Me</div>
-					<div className="nav-item col-auto">Portfolio</div>
-					<div className="nav-item col-auto">Resume</div>
-					<div className="nav-item col-auto">Contact</div>
+					{sections.map(section => {
+						return (
+							<div
+								key={section.dataId}
+								data-id={`${section.dataId}`}
+								className="nav-item col-auto"
+								onClick={sectionChange}
+							>
+								{section.name}
+							</div>
+						);
+					})}
 				</ul>
 			</div>
 		</nav>
