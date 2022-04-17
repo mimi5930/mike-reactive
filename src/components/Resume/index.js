@@ -7,7 +7,7 @@ const Resume = () => {
       <div className="container-fluid row justify-content-center">
         <a
           className="btn btn-primary p-3"
-          href="../../assets/docs/miller-dev-resume.pdf"
+          href={require('../../assets/docs/miller-dev-resume.pdf')}
           download
         >
           Download Resume
