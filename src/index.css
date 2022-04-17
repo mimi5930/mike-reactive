@@ -25,3 +25,17 @@
 .profile-text {
   font-size: larger;
 }
+
+.port-cards {
+  width: 400px;
+  padding: 0;
+}
+
+.port-cards:hover {
+  opacity: 80%;
+}
+
+.port-img {
+  margin: 0;
+  width: 398px;
+}
