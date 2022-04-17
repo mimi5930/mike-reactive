@@ -1,18 +1,27 @@
 .title {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 .pointer {
-	font-size: 18px;
-	cursor: pointer;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .pointer:hover {
-	opacity: 70%;
+  opacity: 70%;
 }
 
 .profile-img {
-	aspect-ratio: 1.5/1;
-	height: 300px;
-	border-radius: 50%;
+  aspect-ratio: 1.5/1;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.profile-text-container {
+  width: 60%;
+  padding: 20px;
+}
+
+.profile-text {
+  font-size: larger;
 }
