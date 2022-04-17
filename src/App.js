@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
 
 // different page sections
 const sections = [
@@ -27,9 +28,17 @@ const sections = [
 
 // bottom links
 const links = [
-  { name: 'GitHub', icon: 'url', url: 'link' },
-  { name: 'LinkedIn', icon: 'url', url: 'link' },
-  { name: 'Stack Overflow', icon: 'url', url: 'link' }
+  { name: 'GitHub', url: 'https://github.com/mimi5930' },
+  {
+    name: 'LinkedIn',
+
+    url: 'https://www.linkedin.com/in/michael-miller-4b72331a2/'
+  },
+  {
+    name: 'Stack Overflow',
+
+    url: 'https://stackoverflow.com/users/18838778/mike-miller'
+  }
 ];
 
 // projects
@@ -93,6 +102,7 @@ function App() {
       {currentContent === 'portfolio' && (
         <Portfolio projects={projects}></Portfolio>
       )}
+      {currentContent === 'resume' && <Resume></Resume>}
       <Footer links={links}></Footer>
     </div>
   );
