@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-to-mike/static/css/main.e4b034b2.css",
-    "main.js": "/react-to-mike/static/js/main.131e67d5.js",
+    "main.css": "/react-to-mike/static/css/main.be6c7f55.css",
+    "main.js": "/react-to-mike/static/js/main.85be274d.js",
     "static/media/mike.jpg": "/react-to-mike/static/media/mike.e2e018db4a2f61a51533.jpg",
     "static/media/mike-violin.png": "/react-to-mike/static/media/mike-violin.6508d80f488a5da4e329.png",
     "static/media/kids-visits.png": "/react-to-mike/static/media/kids-visits.f9c5dcd78087baea8e3b.png",
@@ -10,11 +10,11 @@
     "static/media/my-shopping-list.png": "/react-to-mike/static/media/my-shopping-list.3da0b96dd486b607c5e5.png",
     "static/media/miller-dev-resume.pdf": "/react-to-mike/static/media/miller-dev-resume.364298fb8b051a81882f.pdf",
     "index.html": "/react-to-mike/index.html",
-    "main.e4b034b2.css.map": "/react-to-mike/static/css/main.e4b034b2.css.map",
-    "main.131e67d5.js.map": "/react-to-mike/static/js/main.131e67d5.js.map"
+    "main.be6c7f55.css.map": "/react-to-mike/static/css/main.be6c7f55.css.map",
+    "main.85be274d.js.map": "/react-to-mike/static/js/main.85be274d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4b034b2.css",
-    "static/js/main.131e67d5.js"
+    "static/css/main.be6c7f55.css",
+    "static/js/main.85be274d.js"
   ]
 }
