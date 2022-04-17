@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <section className="container-fluid d-flex flex-column m-3 align-items-center mt-5">
+    <section className="container-fluid d-flex flex-column align-items-center mt-5">
       <img
         alt="Mike smiling at the camera"
         className="profile-img mb-5"
