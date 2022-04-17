@@ -1,3 +1,17 @@
+/* main body */
+
+body {
+  background-color: #dfdfdf;
+}
+
+.navbar {
+  background-color: #2f3061;
+}
+
+.nav-bottom {
+  background-color: #343434;
+}
+
 .title {
   font-size: 30px;
 }
@@ -11,6 +25,7 @@
   opacity: 70%;
 }
 
+/* About Me Page */
 .profile-img {
   aspect-ratio: 1.5/1;
   height: 300px;
@@ -26,6 +41,7 @@
   font-size: larger;
 }
 
+/* Portfolio */
 .port-cards {
   width: 400px;
   padding: 0;
