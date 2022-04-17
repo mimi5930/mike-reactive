@@ -9,18 +9,30 @@ const Portfolio = ({ projects }) => {
           let { name, pic, features, url, gitHub } = project;
           return (
             <div className="card port-cards col-auto m-4" key={name}>
-              <img
-                src={require(`../../assets/img/${pic}`)}
-                alt={name}
-                className="card-img-top port-img"
-              ></img>
+              <a href={url} target="_blank" rel="noreferrer">
+                <img
+                  src={require(`../../assets/img/${pic}`)}
+                  alt={name}
+                  className="card-img-top port-img"
+                ></img>
+              </a>
               <div className="card-body">
                 <h5 className="card-title">{name}</h5>
                 <h6 className="card-subtitle text-muted">{features}</h6>
-                <a href={url} className="card-link">
+                <a
+                  href={url}
+                  className="card-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Deployed App
                 </a>
-                <a href={gitHub} className="card-link">
+                <a
+                  href={gitHub}
+                  className="card-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   GitHub
                 </a>
               </div>
