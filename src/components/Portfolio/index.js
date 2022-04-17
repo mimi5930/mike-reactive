@@ -2,7 +2,7 @@ import React from 'react';
 
 const Portfolio = ({ projects }) => {
   return (
-    <section>
+    <section className="container-fluid">
       <h1>My Projects</h1>
       <div className="row justify-content-evenly">
         {projects.map(project => {
