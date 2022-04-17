@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
 
 // different page sections
 const sections = [
@@ -23,6 +24,12 @@ const sections = [
 	}
 ];
 
+const links = [
+	{ name: 'GitHub', icon: 'url', url: 'link' },
+	{ name: 'LinkedIn', icon: 'url', url: 'link' },
+	{ name: 'Stack Overflow', icon: 'url', url: 'link' }
+];
+
 function App() {
 	const [currentContent, setContent] = useState('about-me');
 
@@ -34,7 +41,8 @@ function App() {
 				setContent={setContent}
 			></Header>
 			{currentContent === 'about-me' && <AboutMe></AboutMe>}
-			<Footer></Footer>
+			{currentContent === 'contact' && <Contact></Contact>}
+			<Footer links={links}></Footer>
 		</div>
 	);
 }

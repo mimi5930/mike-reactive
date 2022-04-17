@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = ({ links }) => {
 	return (
 		<footer className="navbar fixed-bottom bg-dark text-white">
 			<div className="container-fluid">
-				<p>GitHub Link</p>
-				<p>Linked In Link</p>
-				<p>Stack Overflow Link</p>
-				<p>Twitter Link</p>
+				{links.map(link => {
+					let { name, icon, url } = link;
+					return <p key={name}>{name}</p>;
+				})}
 			</div>
 		</footer>
 	);
