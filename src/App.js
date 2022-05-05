@@ -44,6 +44,13 @@ const links = [
 // projects
 const projects = [
   {
+    name: 'Ritual',
+    pic: 'ritual.png',
+    features: 'MERN, GraphQL, Chakra UI, React useContext',
+    url: 'https://ritual-app-01.herokuapp.com/',
+    gitHub: 'https://github.com/Metelak/Ritual'
+  },
+  {
     name: 'Travel Bug',
     pic: 'travel-bug.png',
     features: 'mySql, Handlebars, Express',
